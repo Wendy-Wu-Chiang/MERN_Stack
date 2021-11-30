@@ -1,0 +1,51 @@
+React has a variety of third party libraries we can use for this purpose,
+such as React Router and Reach Router.
+
+So, let's look at our App.js file that acts as an entry point into our React project.
+To use Reach Router in a project, first run
+=> npm install @reach/router
+to install it and add it to the project's dependencies list.
+We want to wrap the part of our website that relies on routing within the <Router> tag.
+This will then create a container that all of our routes will live in.
+
+import React from 'react';
+import { Router } from '@reach/router';
+function App() {
+return (
+
+<div className="App">
+<Router>
+<LoginComponent path="/login"/>
+<DashboardComponent path="/dashboard"/>
+</Router>
+</div>
+);
+}
+export default App;
+
+Link
+
+Now that we have a router set up, we want to be able to link to other pages.
+Traditionally, this is done with an html a tag and an href attribute.
+However, a <Link> component will not refresh the page.
+It will simply change the url and change the DOM.
+
+So, you can have a navbar that looks something like this:
+import React from 'react';
+import { Link } from '@reach/router';
+const NavBar = (props) => {
+return (
+<div>
+<Link to = "/dashboard">Dashboard</Link>
+<Link to = "/login">Login</Link>
+</div>
+);
+}
+
+Navigate
+What if we wanted to redirect a user to another page in our React project?
+This can be done with:
+=> navigate ( import { navigate } from '@reach/router' ).
+After performing some action, we can run a method such as:
+=> navigate('/success')
+and this will programmatically redirect the user to that front end route.
