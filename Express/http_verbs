@@ -1,0 +1,12 @@
+HTTP Methods
+Forms, Data Transferring, and Routing Rules
+
+GET is used for passing insensitive information (show page)
+POST is used for passing sensitive information. (sign in/up form)
+PUT is used for passing updating whole sensitive information. (update page)
+PATCH is used for passing updating pieces of sensitive information. (update)
+DELETE is used for passing deleting sensitive information.
+
+If your form data contains password data, credit card numbers, SSNs, etc, 
+please use POST! If the information is something insensitive like a library search, 
+it's OK to use GET as your method.
