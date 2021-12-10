@@ -1,0 +1,11 @@
+The most popular way of using MongoDB with Node and Express is with a library called Mongoose. 
+Mongoose simplifies making MongoDB queries with its own library of methods.  
+This means that we can connect mongoose directly to a MongoDB database and 
+it will allow us to give more structure to our data with the addition of models and schemas.
+
+Mongoose will act as a layer between our application and our database 
+enabling us to do things like validate and run complex queries more effectively.
+
+1. Installing Mongoose
+Start by creating a folder for your project (labeled as server in the image below) and create both the server.js file and the following folder structure inside of it:
+

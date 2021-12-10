@@ -1,0 +1,17 @@
+Running the MongoDB server:
+=>brew services start mongodb-community@4.4
+
+Connect to your database:
+To connect to your MongoDB databases, in a NEW terminal (after installing, you must open a new terminal), type...
+=>mongo
+
+Now you should see the terminal cursor become a single arrow and blinking underscore. We're in!
+
+Stopping the MongoDB server:
+To stop mongod running as a macOS service, use the following command as needed:
+=>brew services stop mongodb-community@4.4
+
+Database Type: SQL | Mongo
+Database : Schema | Database (db)
+Collection of related records: Tables | Collections
+Each one record in the collection of records: Row / Record | Document
