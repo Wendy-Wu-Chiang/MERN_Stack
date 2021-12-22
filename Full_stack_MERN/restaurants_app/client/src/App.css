@@ -1,0 +1,20 @@
+.App {
+  width: 370px;
+  height: 400px;
+  text-align: center;
+  padding-top: 37px;
+  border: 5px dolid black;
+}
+
+.error_text {
+  color: red;
+  font-size: 20px;
+}
+
+.form_box {
+  margin-top: 20px;
+}
+
+.blue-text {
+  color: blue;
+}

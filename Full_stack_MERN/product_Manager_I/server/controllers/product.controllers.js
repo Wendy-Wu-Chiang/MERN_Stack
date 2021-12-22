@@ -2,8 +2,14 @@ const Product = require("../models/product.model");
 
 const addNewProduct = (req, res) => {
   Product.create(req.body)
-    .then((newProduct) => res.json(newProduct))
-    .catch((err) => console.log(err));
+    .then((newProduct) => {
+      console.log(newProduct);
+      res.json(newProduct);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(400).json(err);
+    });
 };
 
 const getAllProducts = (req, res) => {

@@ -36,9 +36,9 @@ const EditProduct = (props) => {
   return (
     <div>
       <h2>Edit Product</h2>
-      <form onSubmit={handleSubmit}>
-        <h1>Edit Product</h1>
-        <div>
+      {/* <form onSubmit={handleSubmit}> */}
+      <h1>Edit Product</h1>
+      {/* <div>
           <lable htmlFor="title">Title</lable>
           <input
             type="text"
@@ -64,7 +64,7 @@ const EditProduct = (props) => {
         <button type="submit" class="btn btn-dark">
           Submit
         </button>
-      </form>
+      </form> */}
     </div>
   );
 };
